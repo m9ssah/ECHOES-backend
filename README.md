@@ -1,0 +1,2 @@
+- make sure to run venv to install all requirements from requirements.txt
+- setup keys/urls in a .env file

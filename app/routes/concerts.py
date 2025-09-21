@@ -1,8 +1,10 @@
 from fastapi import APIRouter, Depends, Request
-from fastapi.responses import RedirectResponse
+from fastapi.responses import JSONResponse
+# Replace with actual service once implemented
+# from app.services.<feature>_service import <Feature>Service
 
-concerts_router = APIRouter()
+router = APIRouter()
 
-@concerts_router.get("/concerts")
-def get_concerts(artist_name: str):
-    return ConcertService.search_concerts(artist_name)
+@router.get(f"/concerts/action")
+def concerts_action(request: Request):
+    return JSONResponse({"message": "Concerts action successful"})

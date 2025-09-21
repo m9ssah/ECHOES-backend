@@ -12,3 +12,4 @@ class Keys:
     SPOTIFY_REDIRECT_URL = os.getenv("SPOTIFY_REDIRECT_URL")
 
 settings = Keys()
+

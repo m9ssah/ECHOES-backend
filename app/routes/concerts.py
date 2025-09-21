@@ -1,7 +1,5 @@
 from fastapi import APIRouter, Depends, Request
 from fastapi.responses import JSONResponse
-# Replace with actual service once implemented
-# from app.services.<feature>_service import <Feature>Service
 
 router = APIRouter()
 

@@ -18,7 +18,7 @@ app.add_middleware(CORSMiddleware,
 def health_check():
     return {"status": "ok", "message": "Backend is running."}
 
-# API ROuters connections
+# API Routers connections
 app.include_router(auth.router, prefix="app/routes/auth", tags=["Auth"])
 app.include_router(users.router, prefix="app/routes/users", tags=["Users"])
 app.include_router(songs.router, prefix="app/route/songs", tags=["Songs"])
